@@ -13,7 +13,7 @@ class Solution:
         #         result.append(profit)
         # return max(result)
 
-        # to find max and min in a list
+        # ###to find max and min in a list
         # min_price = float('inf')
         # max_price = float('-inf')
         # max_profit = 0
