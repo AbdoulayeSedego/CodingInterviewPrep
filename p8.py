@@ -7,8 +7,10 @@ class Solution:
         right = len(height) -1
         max_area = 0
         while left < right:
+            # Calculate current result
             current_area = min(height[left], height[right]) * (right-left)
             max_area = max(current_area, max_area)
+             #Decide which pointer to move 
             if height[left] < height[right]:
                 left += 1
             else:
