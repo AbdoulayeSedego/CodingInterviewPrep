@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
 
 def middleNode(head):
-    # Your code here - try without looking!
+    # Your code here 
     slow = head
     fast = head
 
@@ -13,18 +13,3 @@ def middleNode(head):
         fast = fast.next.next
     return slow
 
-# Test (hard to test with cycle, but here's the pattern)
-# Create list: 1 → 2 → 3 → 4
-node1 = ListNode(1)
-node2 = ListNode(2)
-node3 = ListNode(3)
-node4 = ListNode(4)
-node1.next = node2
-node2.next = node3
-node3.next = node4
-# No cycle
-print(hasCycle(node1))  # False
-
-# Create cycle: 4 → 2
-node4.next = node2
-print(hasCycle(node1))  # True
