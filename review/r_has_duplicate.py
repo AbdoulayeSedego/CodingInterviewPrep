@@ -2,14 +2,13 @@ from typing import List
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        # Your code here
         seen = set()
         for i in nums:
             if i in seen:
                 return True
-            else:
-                seen.add(i)
+            seen.add(i)
         return False
+
 
 # Test
 solution = Solution()
