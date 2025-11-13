@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
 
 def reverseList(head):
-    # Your code here - try without looking!
+    # Your code here 
     prev = None
     current = head
     while current:

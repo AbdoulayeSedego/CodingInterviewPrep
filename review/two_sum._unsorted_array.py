@@ -8,7 +8,7 @@ class Solution:
             if complement in seen:
                 return [seen[complement], i]
             seen[nums[i]] = i
-        return 
+        return []
 
  
 

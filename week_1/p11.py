@@ -4,7 +4,7 @@ class ListNode:
         self.next = next
 
 def hasCycle(head):
-    # Your code here - try without looking!
+    # Your code here 
     if not head or not head.next:
         return False
     

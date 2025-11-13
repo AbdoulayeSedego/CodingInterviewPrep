@@ -9,7 +9,7 @@ class Solution:
         result = defaultdict(list)
         for i in strs:
             signature = ''.join(sorted(i))
-            result[signature].append(i)
+            result[result.keys()].append(i)
         return list(result.values())
 
 
