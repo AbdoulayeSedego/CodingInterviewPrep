@@ -4,12 +4,12 @@ from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # Your code here
-        if not strs:
+        if not strs: 
             return [[""]]
         result = defaultdict(list)
         for i in strs:
             signature = ''.join(sorted(i))
-            result[result.keys()].append(i)
+            result[signature].append(i)
         return list(result.values())
 
 
